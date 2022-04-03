@@ -1,6 +1,6 @@
 // import apiKeyParticipants from "./creds";
 var clientes = ['teste','Marcelo','Gustavo','Pedro']
-var cpfs = ['0000','1111','2222','3333']
+var cpfs = ['0000',0000,'2222','3333']
 
 function verifyClient() {
     cliente = document.getElementById("name").value

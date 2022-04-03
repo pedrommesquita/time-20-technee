@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grupo 20 - Technee Safra</title>
     <link rel="stylesheet" href="forms.css">
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
     <meta charset="utf-8">
 </head>
 
@@ -30,16 +30,171 @@
                     Envie o formulário e tenha acesso a nossa newsletter!
                 </p>
             </div>
-            <form id="survey-form">
+            <form id="survey-form" onsubmit="return None">
+                <div class="form-header">
+                    <h1 id="title" class="text-center">Cadastro</h1>
+                </div>
+                <div class="form-group">
+                    <label id="name-label" for="name">Nome</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Digite seu nome" />
+                </div>
+                <div class="form-group">
+                    <label id="cpf-label" for="cpf">CPF</label>
+                    <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu cpf" />
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">E-mail</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu email" />
+                </div>
                 <div class="form-group">
                     <p>Você deseja compartilhar dados de que banco?</p>
                     <select id="dropdown" name="role" class="form-control" required>
                         <option disabled selected value>Selecione banco transmissor</option>
-                        <option value="bradesco">Bradesco</option>
-                        <option value="santander">Santander</option>
-                        <option value="itau">Itaú</option>
-                        <option value="caixa">Caixa</option>
-                        <option value="outros">Outros</option>
+                        <option value="ACESSO SOLUÇÕES DE PAGAMENTO S.A.">ACESSO SOLUÇÕES DE PAGAMENTO S.A.</option>
+                        <option value="ASAAS GESTAO FINANCEIRA INSTITUICAO DE PAGAMENTO S.A.">ASAAS GESTAO FINANCEIRA INSTITUICAO DE PAGAMENTO S.A.</option>
+                        <option value="AYMORE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.">AYMORE CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.</option>
+                        <option value="Agora Corretora de Titulos e Valores Mobiliarios SA">Agora Corretora de Titulos e Valores Mobiliarios SA</option>
+                        <option value="BANCO ABC BRASIL S.A.">BANCO ABC BRASIL S.A.</option>
+                        <option value="BANCO AGIBANK S.A.">BANCO AGIBANK S.A.</option>
+                        <option value="BANCO ALFA S.A.">BANCO ALFA S.A.</option>
+                        <option value="BANCO BARI DE INVESTIMENTOS E FINANCIAMENTOS S.A.">BANCO BARI DE INVESTIMENTOS E FINANCIAMENTOS S.A.</option>
+                        <option value="BANCO BMG S.A.">BANCO BMG S.A.</option>
+                        <option value="BANCO BOCOM BBM S.A.">BANCO BOCOM BBM S.A.</option>
+                        <option value="BANCO BRADESCO SA">BANCO BRADESCO SA</option>
+                        <option value="BANCO BS2 S.A.">BANCO BS2 S.A.</option>
+                        <option value="BANCO BTG PACTUAL S.A.">BANCO BTG PACTUAL S.A.</option>
+                        <option value="BANCO C6 S.A.">BANCO C6 S.A.</option>
+                        <option value="BANCO CITIBANK S.A.">BANCO CITIBANK S.A.</option>
+                        <option value="BANCO CREFISA S.A.">BANCO CREFISA S.A.</option>
+                        <option value="BANCO DA AMAZONIA S.A.">BANCO DA AMAZONIA S.A.</option>
+                        <option value="BANCO DAYCOVAL S.A.">BANCO DAYCOVAL S.A.</option>
+                        <option value="BANCO DE LA NACION ARGENTINA">BANCO DE LA NACION ARGENTINA</option>
+                        <option value="BANCO DIGIMAIS S.A.">BANCO DIGIMAIS S.A.</option>
+                        <option value="BANCO DIGIO S.A.">BANCO DIGIO S.A.</option>
+                        <option value="BANCO DO BRASIL S.A.">BANCO DO BRASIL S.A.</option>
+                        <option value="BANCO DO ESTADO DE SERGIPE S.A.">BANCO DO ESTADO DE SERGIPE S.A.</option>
+                        <option value="BANCO DO ESTADO DO PARÁ S.A.">BANCO DO ESTADO DO PARÁ S.A.</option>
+                        <option value="BANCO DO ESTADO DO RIO GRANDE DO SUL S.A.">BANCO DO ESTADO DO RIO GRANDE DO SUL S.A.</option>
+                        <option value="BANCO DO NORDESTE DO BRASIL S.A.">BANCO DO NORDESTE DO BRASIL S.A.</option>
+                        <option value="BANCO FIBRA S.A.">BANCO FIBRA S.A.</option>
+                        <option value="BANCO GENIAL S.A.">BANCO GENIAL S.A.</option>
+                        <option value="BANCO GUANABARA S.A.">BANCO GUANABARA S.A.</option>
+                        <option value="BANCO HSBC S.A.">BANCO HSBC S.A.</option>
+                        <option value="BANCO HYUNDAI CAPITAL BRASIL S.A.">BANCO HYUNDAI CAPITAL BRASIL S.A.</option>
+                        <option value="BANCO INDUSTRIAL DO BRASIL S.A.">BANCO INDUSTRIAL DO BRASIL S.A.</option>
+                        <option value="BANCO INTER S.A.">BANCO INTER S.A.</option>
+                        <option value="BANCO INVESTCRED UNIBANCO S.A.">BANCO INVESTCRED UNIBANCO S.A.</option>
+                        <option value="BANCO ITAUBANK S.A.">BANCO ITAUBANK S.A.</option>
+                        <option value="BANCO ITAUCARD S.A.">BANCO ITAUCARD S.A.</option>
+                        <option value="BANCO ITAÚ BBA S.A.">BANCO ITAÚ BBA S.A.</option>
+                        <option value="BANCO ITAÚ CONSIGNADO S.A.">BANCO ITAÚ CONSIGNADO S.A.</option>
+                        <option value="BANCO J.P. MORGAN S.A.">BANCO J.P. MORGAN S.A.</option>
+                        <option value="BANCO KEB HANA DO BRASIL S.A.">BANCO KEB HANA DO BRASIL S.A.</option>
+                        <option value="BANCO MERCANTIL DO BRASIL S.A.">BANCO MERCANTIL DO BRASIL S.A.</option>
+                        <option value="BANCO MODAL S.A.">BANCO MODAL S.A.</option>
+                        <option value="BANCO MÁXIMA S.A.">BANCO MÁXIMA S.A.</option>
+                        <option value="BANCO NACIONAL DE DESENVOLVIMENTO ECONOMICO E SOCIAL">BANCO NACIONAL DE DESENVOLVIMENTO ECONOMICO E SOCIAL</option>
+                        <option value="BANCO ORIGINAL S.A.">BANCO ORIGINAL S.A.</option>
+                        <option value="BANCO OURINVEST S.A.">BANCO OURINVEST S.A.</option>
+                        <option value="BANCO PAN S.A.">BANCO PAN S.A.</option>
+                        <option value="BANCO PAULISTA S.A.">BANCO PAULISTA S.A.</option>
+                        <option value="BANCO PSA FINANCE BRASIL S.A.">BANCO PSA FINANCE BRASIL S.A.</option>
+                        <option value="BANCO RCI BRASIL S.A.">BANCO RCI BRASIL S.A.</option>
+                        <option value="BANCO RENDIMENTO S.A.">BANCO RENDIMENTO S.A.</option>
+                        <option value="BANCO RIBEIRAO PRETO S.A.">BANCO RIBEIRAO PRETO S.A.</option>
+                        <option value="BANCO RNX S/A">BANCO RNX S/A</option>
+                        <option value="BANCO SAFRA S.A.">BANCO SAFRA S.A.</option>
+                        <option value="BANCO SANTANDER (BRASIL) S.A.">BANCO SANTANDER (BRASIL) S.A.</option>
+                        <option value="BANCO SEMEAR S.A.">BANCO SEMEAR S.A.</option>
+                        <option value="BANCO SENFF S.A.">BANCO SENFF S.A.</option>
+                        <option value="BANCO SOFISA S.A.">BANCO SOFISA S.A.</option>
+                        <option value="BANCO TOPAZIO">BANCO TOPAZIO</option>
+                        <option value="BANCO TRIANGULO S.A.">BANCO TRIANGULO S.A.</option>
+                        <option value="BANCO VOITER SA">BANCO VOITER SA</option>
+                        <option value="BANCO VOTORANTIM S.A.">BANCO VOTORANTIM S.A.</option>
+                        <option value="BANCO WOORI BANK DO BRASIL S.A.">BANCO WOORI BANK DO BRASIL S.A.</option>
+                        <option value="BANCO XP S.A.">BANCO XP S.A.</option>
+                        <option value="BANESTES S.A. BANCO DO ESTADO DO ESPIRITO SANTO">BANESTES S.A. BANCO DO ESTADO DO ESPIRITO SANTO</option>
+                        <option value="BANK OF AMERICA MERRILL LYNCH BANCO MÚLTIPLO S.A.">BANK OF AMERICA MERRILL LYNCH BANCO MÚLTIPLO S.A.</option>
+                        <option value="BOLETOBANCÁRIO.COM TECNOLOGIA DE PAGAMENTOS LTDA.">BOLETOBANCÁRIO.COM TECNOLOGIA DE PAGAMENTOS LTDA.</option>
+                        <option value="BONUSPAGO SOCIEDADE DE CREDITO DIRETO S.A.">BONUSPAGO SOCIEDADE DE CREDITO DIRETO S.A.</option>
+                        <option value="BPP INSTITUIÇÃO DE PAGAMENTO S.A.">BPP INSTITUIÇÃO DE PAGAMENTO S.A.</option>
+                        <option value="BRASIL CARD MEIOS DE PAGAMENTOS LTDA">BRASIL CARD MEIOS DE PAGAMENTOS LTDA</option>
+                        <option value="BRB - BANCO DE BRASILIA S.A.">BRB - BANCO DE BRASILIA S.A.</option>
+                        <option value="Banco Bradescard SA">Banco Bradescard SA</option>
+                        <option value="Banco Bradesco Financiamentos SA">Banco Bradesco Financiamentos SA</option>
+                        <option value="Banco Losango SA Banco Multiplo">Banco Losango SA Banco Multiplo</option>
+                        <option value="CAIXA ECONOMICA FEDERAL">CAIXA ECONOMICA FEDERAL</option>
+                        <option value="CARUANA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO">CARUANA S.A. - SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO</option>
+                        <option value="CELCOIN INSTITUICAO DE PAGAMENTO S.A.">CELCOIN INSTITUICAO DE PAGAMENTO S.A.</option>
+                        <option value="CHINA CONSTRUCTION BANK (BRASIL) BANCO MÚLTIPLO S/A">CHINA CONSTRUCTION BANK (BRASIL) BANCO MÚLTIPLO S/A</option>
+                        <option value="CIELO S.A.">CIELO S.A.</option>
+                        <option value="CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI">CONFEDERACAO DAS COOPERATIVAS DO SICREDI - CONFEDERACAO SICREDI</option>
+                        <option value="CONFEDERACAO NACIONAL DAS COOPERATIVAS DO SICOOB LTDA">CONFEDERACAO NACIONAL DAS COOPERATIVAS DO SICOOB LTDA</option>
+                        <option value="CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS CENTRAIS DE CRÉDITO E ECONOMIA FAMILIAR E SOLIDÁRIA  CRESOL ">CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS CENTRAIS DE CRÉDITO E ECONOMIA FAMILIAR E SOLIDÁRIA  CRESOL </option>
+                        <option value="CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS CENTRAIS UNICRED LTDA. - UNICRED DO BRASIL.">CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS CENTRAIS UNICRED LTDA. - UNICRED DO BRASIL.</option>
+                        <option value="COOPERATIVA CENTRAL DE CRÉDITO - AILOS">COOPERATIVA CENTRAL DE CRÉDITO - AILOS</option>
+                        <option value="COOPERATIVA DE CREDITO DOS SERVIDORES DA UNIVERSIDADE FEDERAL DO ESPIRITO SANTO">COOPERATIVA DE CREDITO DOS SERVIDORES DA UNIVERSIDADE FEDERAL DO ESPIRITO SANTO</option>
+                        <option value="COOPERATIVA DE CREDITO RURAL DE IBIAM - SULCREDI/IBIAM">COOPERATIVA DE CREDITO RURAL DE IBIAM - SULCREDI/IBIAM</option>
+                        <option value="COOPERATIVA DE CREDITO RURAL SEARA - CREDISEARA">COOPERATIVA DE CREDITO RURAL SEARA - CREDISEARA</option>
+                        <option value="COOPERATIVA DE CRÉDITO RURAL DE OURO   SULCREDI/OURO">COOPERATIVA DE CRÉDITO RURAL DE OURO   SULCREDI/OURO</option>
+                        <option value="COOPERATIVA DE CRÉDITO RURAL DE PEQUENOS AGRICULTORES E DA REFORMA AGRÁRIA DO CENTRO OESTE DO PARANÁ">COOPERATIVA DE CRÉDITO RURAL DE PEQUENOS AGRICULTORES E DA REFORMA AGRÁRIA DO CENTRO OESTE DO PARANÁ</option>
+                        <option value="COOPERATIVA DE CRÉDITO RURAL DE SÃO MIGUEL DO OESTE - SULCREDI/SÃO MIGUEL">COOPERATIVA DE CRÉDITO RURAL DE SÃO MIGUEL DO OESTE - SULCREDI/SÃO MIGUEL</option>
+                        <option value="COOPERATIVA DE ECONOMIA E CREDITO MUTUO DOS SERVIDORES ESTATUTARIOS DA ADMINISTRACAO DIRETA DO ESTAD">COOPERATIVA DE ECONOMIA E CREDITO MUTUO DOS SERVIDORES ESTATUTARIOS DA ADMINISTRACAO DIRETA DO ESTAD</option>
+                        <option value="COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DOS SERVIDORES PÚBLICOS DO PODER EXECUTIVO FEDERAL NO ESTADO">COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DOS SERVIDORES PÚBLICOS DO PODER EXECUTIVO FEDERAL NO ESTADO</option>
+                        <option value="CORA SOCIEDADE DE CRÉDITO DIRETO S.A.">CORA SOCIEDADE DE CRÉDITO DIRETO S.A.</option>
+                        <option value="CREDIALIANÇA COOPERATIVA DE CRÉDITO RURAL">CREDIALIANÇA COOPERATIVA DE CRÉDITO RURAL</option>
+                        <option value="CREDICOAMO CREDITO RURAL COOPERATIVA">CREDICOAMO CREDITO RURAL COOPERATIVA</option>
+                        <option value="CREDISAN COOPERATIVA DE CRÉDITO">CREDISAN COOPERATIVA DE CRÉDITO</option>
+                        <option value="CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO LTDA.">CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO LTDA.</option>
+                        <option value="CREDITAS SOCIEDADE DE CRÉDITO DIRETO S.A.">CREDITAS SOCIEDADE DE CRÉDITO DIRETO S.A.</option>
+                        <option value="CREFISA S.A.-CREDITO, FINANCIAMENTO E INVESTIMENTOS">CREFISA S.A.-CREDITO, FINANCIAMENTO E INVESTIMENTOS</option>
+                        <option value="FINANCEIRA ITAÚ CBD S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO">FINANCEIRA ITAÚ CBD S.A. CRÉDITO, FINANCIAMENTO E INVESTIMENTO</option>
+                        <option value="GERENCIANET S.A.">GERENCIANET S.A.</option>
+                        <option value="GERU SOCIEDADE DE CREDITO DIRETO SA">GERU SOCIEDADE DE CREDITO DIRETO SA</option>
+                        <option value="GETNET ADQUIRENCIA E SERVICOS PARA MEIOS DE PAGAMENTO S.A.">GETNET ADQUIRENCIA E SERVICOS PARA MEIOS DE PAGAMENTO S.A.</option>
+                        <option value="HIPERCARD BANCO MÚLTIPLO S.A.">HIPERCARD BANCO MÚLTIPLO S.A.</option>
+                        <option value="HUB PAGAMENTOS S.A">HUB PAGAMENTOS S.A</option>
+                        <option value="INTRAG DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.">INTRAG DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS LTDA.</option>
+                        <option value="ITAU CORRETORA DE VALORES S.A.">ITAU CORRETORA DE VALORES S.A.</option>
+                        <option value="ITAUVEST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.">ITAUVEST DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.</option>
+                        <option value="ITAÚ DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.">ITAÚ DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.</option>
+                        <option value="ITAÚ UNIBANCO S.A.">ITAÚ UNIBANCO S.A.</option>
+                        <option value="LUIZACRED S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO">LUIZACRED S.A. SOCIEDADE DE CRÉDITO, FINANCIAMENTO E INVESTIMENTO</option>
+                        <option value="MERCADOPAGO.COM REPRESENTACOES LTDA.">MERCADOPAGO.COM REPRESENTACOES LTDA.</option>
+                        <option value="MICROINVEST S.A. SOCIEDADE DE CRÉDITO A MICROEMPREENDEDOR">MICROINVEST S.A. SOCIEDADE DE CRÉDITO A MICROEMPREENDEDOR</option>
+                        <option value="MIDWAY S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO">MIDWAY S.A. - CREDITO, FINANCIAMENTO E INVESTIMENTO</option>
+                        <option value="MONEY PLUS SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E A EMPRESA DE PEQUENO PORTE LTDA.">MONEY PLUS SOCIEDADE DE CRÉDITO AO MICROEMPREENDEDOR E A EMPRESA DE PEQUENO PORTE LTDA.</option>
+                        <option value="NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO">NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO</option>
+                        <option value="NUMBRS SOCIEDADE DE CRÉDITO DIRETO S.A.">NUMBRS SOCIEDADE DE CRÉDITO DIRETO S.A.</option>
+                        <option value="Neon Pagamentos S.A.">Neon Pagamentos S.A.</option>
+                        <option value="OMNI BANCO SA">OMNI BANCO SA</option>
+                        <option value="PAGSEGURO INTERNET S.A.">PAGSEGURO INTERNET S.A.</option>
+                        <option value="PARANÁ BANCO S.A.">PARANÁ BANCO S.A.</option>
+                        <option value="PARATI - CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.">PARATI - CREDITO, FINANCIAMENTO E INVESTIMENTO S.A.</option>
+                        <option value="PEFISA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO">PEFISA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTO</option>
+                        <option value="PI DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.">PI DISTRIBUIDORA DE TÍTULOS E VALORES MOBILIÁRIOS S.A.</option>
+                        <option value="PICPAY SERVICOS S.A.">PICPAY SERVICOS S.A.</option>
+                        <option value="QI SOCIEDADE DE CRÉDITO DIRETO S.A.">QI SOCIEDADE DE CRÉDITO DIRETO S.A.</option>
+                        <option value="Quanto Network Instituicao de Pagamento Ltda.">Quanto Network Instituicao de Pagamento Ltda.</option>
+                        <option value="REALIZE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.">REALIZE CRÉDITO, FINANCIAMENTO E INVESTIMENTO S.A.</option>
+                        <option value="REDECARD S.A.">REDECARD S.A.</option>
+                        <option value="S3 CACEIS BRASIL DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.">S3 CACEIS BRASIL DISTRIBUIDORA DE TITULOS E VALORES MOBILIARIOS S.A.</option>
+                        <option value="SANTANDER CORRETORA DE CAMBIO E VALORES MOBILIARIOS S.A.">SANTANDER CORRETORA DE CAMBIO E VALORES MOBILIARIOS S.A.</option>
+                        <option value="STONE PAGAMENTOS S.A.">STONE PAGAMENTOS S.A.</option>
+                        <option value="SUMUP SOCIEDADE DE CRÉDITO DIRETO S.A.">SUMUP SOCIEDADE DE CRÉDITO DIRETO S.A.</option>
+                        <option value="SUPER PAGAMENTOS E ADMINISTRACAO DE MEIOS ELETRONICOS S.A.">SUPER PAGAMENTOS E ADMINISTRACAO DE MEIOS ELETRONICOS S.A.</option>
+                        <option value="TORO CTVM S.A.">TORO CTVM S.A.</option>
+                        <option value="UNIPRIME ALLIANCE - COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO">UNIPRIME ALLIANCE - COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO</option>
+                        <option value="UNIPRIME CAMPOS GERAIS - COOPERATIVA DE CRÉDITO LTDA.">UNIPRIME CAMPOS GERAIS - COOPERATIVA DE CRÉDITO LTDA.</option>
+                        <option value="UNIPRIME CENTRAL - CENTRAL INTERESTADUAL DE COOPERATIVAS DE CREDITO LTDA.">UNIPRIME CENTRAL - CENTRAL INTERESTADUAL DE COOPERATIVAS DE CREDITO LTDA.</option>
+                        <option value="UNIPRIME CENTRO-OESTE DO BRASIL - COOPERATIVA DE CRÉDITO">UNIPRIME CENTRO-OESTE DO BRASIL - COOPERATIVA DE CRÉDITO</option>
+                        <option value="UNIPRIME DO IGUAÇU - COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DOS PROFISSIONAIS DA SAÚDE, DAS CIÊNCIA">UNIPRIME DO IGUAÇU - COOPERATIVA DE ECONOMIA E CRÉDITO MÚTUO DOS PROFISSIONAIS DA SAÚDE, DAS CIÊNCIA</option>
+                        <option value="UNIPRIME NORTE DO PARANA - COOPERATIVA DE CREDITO LTDA">UNIPRIME NORTE DO PARANA - COOPERATIVA DE CREDITO LTDA</option>
+                        <option value="UNIPRIME PIONEIRA COOPERATIVA DE CRÉDITO">UNIPRIME PIONEIRA COOPERATIVA DE CRÉDITO</option>
+                        <option value="UNIPRIME SUL MS - COOPERATIVA DE CRÉDITO">UNIPRIME SUL MS - COOPERATIVA DE CRÉDITO</option>
+                        <option value="UP.P SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.">UP.P SOCIEDADE DE EMPRÉSTIMO ENTRE PESSOAS S.A.</option>
+                        <option value="VIA CERTA FINANCIADORA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTOS">VIA CERTA FINANCIADORA S.A. - CRÉDITO, FINANCIAMENTO E INVESTIMENTOS</option>
                     </select>
                 </div>
                 
@@ -88,7 +243,7 @@
                 </div>
 
                 <div class="form-group">
-                    <button type="submit" id="submit" class="submit-button">
+                    <button type="submit" id="submit" class="submit-button" onclick="location.href='/sucesso.html'">
                         Submit
                     </button>
                 </div>

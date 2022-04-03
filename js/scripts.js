@@ -1,15 +1,9 @@
-// import apiKeyParticipants from "./creds";
-var clientes = ['teste','Marcelo','Gustavo','Pedro']
-var cpfs = ['0000',0000,'2222','3333']
-
-function verifyClient() {
-    cliente = document.getElementById("name").value
-    cpf = document.getElementById("cpf").value
-
-    if ((clientes.includes(cliente)) || (cpfs.includes(cpf))) {
-        window.location.href = "/form2.html"
-    } else {
-        window.location.href = "https://www.safra.com.br/abra-sua-conta.htm"
-    }
-}
-
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(() => {  
+        const tituloVar = document.getElementById('titulo')
+        const contentVar = document.getElementById('container-message')
+        tituloVar.innerHTML = "Sucesso"
+        contentVar.innerHTML = '<img src="/assets/loading/ok.png" alt="Icone de Loading">'
+        console.log(contentVar)
+    }, 2500);
+  });

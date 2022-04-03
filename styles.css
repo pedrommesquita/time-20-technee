@@ -96,7 +96,6 @@ header {
 #background img {
     max-width: 800px;
     max-width: 400px;
-    min-width: 600px;
     object-fit: cover;
 }
 
@@ -137,6 +136,12 @@ header {
         background-repeat: no-repeat;
         background-position: right bottom;
         background-size: 800px auto;
+    }
+
+    #background img {
+        max-width: 800px;
+        width: 400px;
+        object-fit: cover;
     }
     #textWrapper {
     display: flex;

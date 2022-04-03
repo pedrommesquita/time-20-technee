@@ -5,6 +5,8 @@ O documento index.html é o código fonte utilizado para a criação da página 
 
 O documento form2.html é o código fonte utilizado para a criação do nosso site. Este código possibilita criar/alterar os formulários utilizados pelos usuários para a criação do cadastro. O documento forms.css representa as opções de estilo utilizadas para a formatação do documento form2.html.
 
+O arquivo sucesso.html é o código fonte utilizado para a confirmação de que os dados do usuário foram adquiridos corretamente.
+
 A pasta js contém o arquivo scripts.js. Este arquivo contém os scripts para funcionamento do site.
 
 A pasta assets contém imagens utilizadas na criação do site.

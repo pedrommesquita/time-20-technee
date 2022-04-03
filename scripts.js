@@ -1,5 +1,6 @@
-var cpf = document.querySelector("#cpf");
+import apiKeyParticipants from "./creds";
 
-cpf.addEventListener("blur", function(){
-   if(cpf.value) cpf.value = cpf.value.match(/.{1,3}/g).join(".").replace(/\.(?=[^.]*$)/,"-");
-});
+function teste() {
+    console.log(apiKeyParticipants)
+    return "teste"
+}
